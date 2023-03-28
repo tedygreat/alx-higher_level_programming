@@ -34,7 +34,7 @@ class Square:
             j = 0
             x_pad = 0
             for x_pad in range(0, self.__position[0]):
-                string += ' '
+                string += " "
             for j in range(0, self.__size):
                 string += '#'
             string += '\n'
