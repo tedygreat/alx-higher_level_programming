@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ squre """
 
+
 class Square:
     """
     class square that has attributes:
