@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-    """ squer class """
+""" squer class """
 class Square:
     """
     empty class for Square that define squer
