@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" squre """
 
 class Square:
     """
