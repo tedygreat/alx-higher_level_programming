@@ -60,19 +60,19 @@ class Square:
         """
         i = 0
         if self.__size == 0:
-            print()
+            print("")
             return
         for i in range(0, self.__position[1]):
-            print()
+            print("")
         i = 0
         for i in range(0, self.__size):
             j = 0
             x_pad = 0
             for x_pad in range(0, self.__position[0]):
-                print(" ", end='')
+                print(" ", end="")
             for j in range(0, self.__size):
-                print("#", end='')
-            print()
+                print("#", end="")
+            print("")
 
     def __validate_size(self, size):
         """
