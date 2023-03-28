@@ -41,12 +41,15 @@ class Square:
         """
         prints the square using '#' characters
         """
-        i = 0
-        for i in range(0, self.__size):
-            j = 0
-            for j in range(0, self.__size):
-                print("#", end='')
+        if self.__size == 0:
             print()
+        else:
+            i = 0
+            for i in range(0, self.__size):
+                j = 0
+                for j in range(0, self.__size):
+                    print("#", end='')
+                print()
 
     def __validate_size(self, size):
         """
