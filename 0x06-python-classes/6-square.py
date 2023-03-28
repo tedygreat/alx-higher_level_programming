@@ -44,8 +44,12 @@ class Square:
         """
         setter for position attribute
         """
-        if self.__validate_pos(value):
-            self.__position = value
+        if (not isinstance(value, tuple)or
+                len(value) != 2 or
+                not all(isinstance(num, int) for num in value) or
+                not all(num >= 0 for num in value)):
+            raise TypeError("postion must be atuple of postion integer")
+        self.__position = value
 
     def area(self):
         """
