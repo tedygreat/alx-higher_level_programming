@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
- """empty rectangle class for later use
-    """
+
+"""empty rectangle class """
 
 
 class Rectangle():
-    """empty rectangle class for later use
-    """
+    """empty rectangle class  """
     pass

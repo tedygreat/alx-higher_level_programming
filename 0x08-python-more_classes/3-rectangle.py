@@ -37,7 +37,7 @@ class Rectangle():
         elif value < 0:
             raise ValueError("width must be an integer")
         else:
-             self.__width = value
+            self.__width = value
 
     @property
     def height(self):
