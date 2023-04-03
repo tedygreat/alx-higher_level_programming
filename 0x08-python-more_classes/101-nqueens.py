@@ -37,22 +37,3 @@ num = int(args[1])
 if num < 4:
     print("N must be at least 4")
     exit(1)
-
-def get_n_queens(chess_board, column, num):
-    if column >= num:
-        return True
-    for i in range(0, num):
-        if board_safe(chess_board, column):
-            chess_board[i][column] = 1
-            if get_n_queens(chess_board, column + 1):
-                return True
-            board[i][column] = 0
-    return False
-
-solutions = []
-board = [[0 for a in range(0, num)] for b in range(0, num)]
-running = True
-while running:
-    sol = get_n_queens(board)
-    solutions.append(sol)
-    running = False
