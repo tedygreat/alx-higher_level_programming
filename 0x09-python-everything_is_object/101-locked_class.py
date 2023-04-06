@@ -1,14 +1,7 @@
 #!/usr/bin/python3
-
-
-""" loock """
+"""Locked Class module"""
 
 
 class LockedClass:
-    """Locked class: can't set instance attributes to it
-    """
-    def __setattr__(self, name, value):
-        if name == "first_name":
-            self.__dict__[name] = value
-        else:
-            raise AttributeError("'LockedClass' object has no attribute '" + name + "'")
+    """class with only one attribute"""
+    __slots__ = ("first_name",)
