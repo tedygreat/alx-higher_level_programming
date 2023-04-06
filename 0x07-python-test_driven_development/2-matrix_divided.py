@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+""" matrix """
+
+
 def matrix_divided(matrix, div):
     """
     divides all elements of a matrix, elements must be ->
