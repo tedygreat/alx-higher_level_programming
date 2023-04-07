@@ -27,3 +27,19 @@ ZeroDivisionError: division by zero
 Traceback (most recent call last):
 	...
 TypeError: Each row of the matrix must have the same size
+
+
+>>> test_mat = []
+>>> print(div_mat(test_mat, 2))
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+
+>>> matrix = [1, 2, 3]
+>>> print(div_mat(matrix, 3))
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
