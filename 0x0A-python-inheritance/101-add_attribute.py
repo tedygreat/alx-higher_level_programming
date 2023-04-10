@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task adv """
+
+
 def add_attribute(obj, name, value):
     """ adds an attribute to the class if possible
         -> aka is

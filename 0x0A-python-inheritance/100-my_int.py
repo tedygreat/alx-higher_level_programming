@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task adv """
+
+
 class MyInt(int):
     """inversed int, overriding operator methods / comparison methods
     """
