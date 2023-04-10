@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task 0 """
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
-
 class Rectangle(BaseGeometry):
     """ rectangle shape, inheirts from basegeometry
     """

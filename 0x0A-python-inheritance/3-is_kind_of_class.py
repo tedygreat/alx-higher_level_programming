@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task 3 """
+
+
 def is_kind_of_class(obj, a_class):
     """ checks if an object is sort of a class
         -> through inheritance

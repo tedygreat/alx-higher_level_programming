@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task 1 """
+
+
 class MyList(list):
     """ extended version of list
     """

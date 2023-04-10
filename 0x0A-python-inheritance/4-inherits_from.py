@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task 4 """
+
+
 def inherits_from(obj, a_class):
     """ checks if an object inherited from a class
     """

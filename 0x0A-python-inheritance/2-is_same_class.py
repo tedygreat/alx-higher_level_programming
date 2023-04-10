@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 
+"""0x0A-python-inheritance task 2 """
+
+
 def is_same_class(obj, a_class):
     """ checks if two objects are EXACTLY the same class
         -> doesn't care about inheritance
