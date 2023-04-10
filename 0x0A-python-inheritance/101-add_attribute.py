@@ -14,4 +14,4 @@ def add_attribute(obj, name, value):
         if type(obj) is _type:
             raise TypeError("can't add new attribute")
 
-    object.__setattr__(obj, name, value)
+    setattr(obj, name, value)
