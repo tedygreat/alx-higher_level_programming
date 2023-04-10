@@ -3,19 +3,14 @@ TESTS FOR 1-my_list.py
 ======================
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(4)
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
+>>> my_list.append(-40)
+>>> my_list.append(40)
+>>> my_list.append(0)
 >>> print(my_list)
-[1, 4, 2, 3, 5]
+[-40, 40, 0]
 
 >>> my_list.print_sorted()
-[1, 2, 3, 4, 5]
-
->>> print(my_list)
-[1, 4, 2, 3, 5]
+[-40, 0, 40]
 
 >>> my_list = MyList()
 >>> my_list.append(4000000000000000)
@@ -25,4 +20,3 @@ TESTS FOR 1-my_list.py
 
 >>> print(my_list)
 [4000000000000000, 0]
-
