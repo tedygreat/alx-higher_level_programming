@@ -2,7 +2,7 @@
 
 
 class MyList(list):
-    """extended version of list
+    """ extended version of list
     """
     def print_sorted(self):
         """prints the list in ascending order

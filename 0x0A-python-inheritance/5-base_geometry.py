@@ -2,6 +2,6 @@
 
 
 class BaseGeometry():
-    """for use with shapes. Super class.
+    """ for use with shapes. Super class.
     """
     pass

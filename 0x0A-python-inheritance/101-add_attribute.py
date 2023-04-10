@@ -2,7 +2,7 @@
 
 
 def add_attribute(obj, name, value):
-    """adds an attribute to the class if possible
+    """ adds an attribute to the class if possible
         -> aka is
     """
     builtins = (str, int, complex, bool, float, list,
