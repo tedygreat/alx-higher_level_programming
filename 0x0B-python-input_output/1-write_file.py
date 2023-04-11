@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 
-""" 0x0B-python-input_output task 0"""
+""" 0x0B-python-input_output task 1"""
 
 
-def read_file(filename=""):
-    """reads a file
+def number_of_lines(filename=""):
+    """gets the number of lines from filename
     """
     with open(filename, encoding='utf-8') as myFile:
-        print(myFile.read(), end='')
+        return sum([1 for line in myFile])
