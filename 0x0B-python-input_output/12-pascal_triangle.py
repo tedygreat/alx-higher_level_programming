@@ -2,6 +2,8 @@
 
 
 """ pascal """
+
+
 def pascal_triangle(n):
     """gets pascal triangle for n,
         -> n assumed to always be int
