@@ -4,8 +4,8 @@
 """ 0x0B-python-input_output task 1"""
 
 
-def number_of_lines(filename=""):
-    """gets the number of lines from filename
+def write_file(filename="", text=""):
+    """writes to a utf-8 encoded text file
     """
-    with open(filename, encoding='utf-8') as myFile:
-        return sum([1 for line in myFile])
+    with open(filename, 'w', encoding='utf-8') as myFile:
+        return myFile.write(text)
