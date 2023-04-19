@@ -9,10 +9,7 @@ class MyList(list):
     """
     def print_sorted(self):
         """prints the list in ascending order
-        """
-        if self == []:
-            print("empty")
-        else:    
-            copy = self[:]
-            copy = sorted(copy)
-            print(copy)
+        """    
+        copy = self[:]
+        copy = sorted(copy)
+        print(copy)
