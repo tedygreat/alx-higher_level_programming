@@ -12,6 +12,7 @@ class MyList(list):
         """
         if self == []:
             print("empty")
-        copy = self[:]
-        copy = sorted(copy)
-        print(copy)
+        else:    
+            copy = self[:]
+            copy = sorted(copy)
+            print(copy)
