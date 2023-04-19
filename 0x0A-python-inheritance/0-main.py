@@ -12,5 +12,7 @@ class MyClass2(object):
         pass
 
 print(lookup(MyClass1))
+print ("===============")
 print(lookup(MyClass2))
+print("====================")
 print(lookup(int))
