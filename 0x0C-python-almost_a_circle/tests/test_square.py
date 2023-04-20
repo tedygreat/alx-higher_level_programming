@@ -4,6 +4,7 @@
 """
 
 
+import json
 import sys
 import unittest
 from models.square import Square
