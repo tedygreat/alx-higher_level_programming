@@ -83,17 +83,13 @@ class Base:
     def save_to_file(cls, list_objs):
         """saves a list of objects to a file as a JSON string
         """
-        new_list = None
-        list_obj_copy = list_objs.copy()
-        cname = cls.get_cname_from_sublist(list_obj_copy)
-
-        super_list = []
-        for ele in list_obj_copy:
-            if issubclass(type(ele), Base):
-                super_list.append(ele.to_dictionary())
-        write_str = cls.to_json_string(super_list)
-        with open(cname + '.json', 'w', encoding='utf-8') as myFile:
-            myFile.write(write_str)
+        filename = cls.__name__ + ".json"
+        with open(filename, "w") as jsonfile:
+            if list_objs is None:
+                jsonfile.write("[]")
+            else:
+                list_dicts = [ele.to_dictionary() for ele in list_objs]
+                jsonfile.write(Base.to_json_string(list_dicts))
 
     @classmethod
     def create(cls, **dictionary):
