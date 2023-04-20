@@ -94,7 +94,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """creates a new instance of sub class using that class's
-            -> update method after instantiating one instance.
+            -> update   method after instantiating one instance.
         """
         if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
