@@ -96,11 +96,11 @@ class Base:
         """creates a new instance of sub class using that class's
             -> update method after instantiating one instance.
         """
-"""
+
       if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle" or cls.__name__ == "Square":
                 new = cls(1, 1)
-            else:
+ """           else:
                 new = cls(1)
         new.update(**dictionary)
         return new
