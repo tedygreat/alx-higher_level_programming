@@ -49,11 +49,12 @@ class Square(Rectangle):
     def to_dictionary(self):
         """gets the dictionary representation of a square object
         """
-        new_d = super().to_dictionary()
-        del new_d['height']
-        del new_d['width']
-        new_d['size'] = self.size
-        return new_d
+        return {
+            "id": self.id,
+                "width": self.width,
+                "x": self.x,
+                "y": self.y
+        }
 
     def to_csv(self):
         """returns a list containing csv representation of rectangle
