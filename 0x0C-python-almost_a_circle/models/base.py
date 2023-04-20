@@ -94,15 +94,12 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """creates a new instance of sub class using that class's
-            -> update   method after instantiating one instance.
+            -> update method after instantiating one instance.
         """
-        if dictionary and dictionary != {}:
-            if cls.__name__ == "Rectangle":
-                new = cls(1, 1)
-            else:
-                new = cls(1)
-            new.update(**dictionary)
-            return new
+        new_inst = cls(1, 1)
+        if new_inst is not None:
+            new_inst.update(**dictionary)
+        return new_inst
 
     @classmethod
     def load_from_file(cls):
