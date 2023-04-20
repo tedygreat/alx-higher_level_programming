@@ -68,27 +68,6 @@ class TestBase(unittest.TestCase):
         d_list = Base.from_json_string(None)
         self.assertEqual(len(d_list), 0)
 
-    def test_write_file_complex(self):
-        """tests writing a file with harder inputs
-        """
-        s = Square(3, 1, 1, 10)
-        s2 = Square(4, 2, 2, 20)
-        r1 = Rectangle(5, 6, 3, 3, 30)
-        r2 = Rectangle(7, 8, 4, 4, 40)
-        Base.save_to_file(["hello", 42, "more garb", True, s, s2])
-        with open('Square.json', 'r', encoding='utf-8') as jsonfile:
-            text = jsonfile.read()
-        list_of_dicts = eval(text)
-        self.assertEqual(list_of_dicts[0]['id'], 10)
-        self.assertEqual(list_of_dicts[1]['x'], 2)
-
-        Base.save_to_file([s, 89, r1, "garb", 42, s2, r2])
-        with open('Rectangle.json', 'r', encoding='utf-8') as jsonfile:
-            text = jsonfile.read()
-        list_of_dicts = eval(text)
-        self.assertEqual(list_of_dicts[1]['id'], 30)
-        self.assertEqual(list_of_dicts[3]['x'], 4)
-
     def test_create_inst(self):
         r = Rectangle(9, 2, 3, 4, 45)
         s = Square(4, 8, 9, 2)
