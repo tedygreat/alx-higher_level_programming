@@ -1,5 +1,5 @@
 -- script to create a new user and server
--- DDL query to do so.
+-- DDL query to do . 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
 CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
 -- query to grant permissions to new user
