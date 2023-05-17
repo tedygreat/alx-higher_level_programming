@@ -1,5 +1,5 @@
 -- script for selecting TV shows and their genres
--- join statement to do result DML
+-- join statement to do result DML.
 SELECT
   tv_shows.title AS title
   FROM tv_show_genres
