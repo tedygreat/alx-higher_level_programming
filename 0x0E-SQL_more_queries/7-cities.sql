@@ -1,5 +1,5 @@
 -- script to create a table in server
--- DDL query to do so
+-- DDL query to do so.
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 -- set database to new DB
 USE hbtn_0d_usa;
