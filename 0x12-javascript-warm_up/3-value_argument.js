@@ -1,4 +1,6 @@
 #!/usr/bin/node
+// prints the first argument passed to
+
 const process = require('process');
 let arg = process.argv[2];
 if (arg === undefined) {
