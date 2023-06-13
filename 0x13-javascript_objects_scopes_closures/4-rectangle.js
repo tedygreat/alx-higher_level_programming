@@ -6,6 +6,7 @@ class Rectangle {
       this.height = h;
     }
   }
+
   print (printC = 'X') {
     let i;
     let j;
