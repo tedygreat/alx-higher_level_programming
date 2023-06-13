@@ -11,4 +11,5 @@ class Square extends square {
     this.print(c);
   }
 }
+
 module.exports = Square;
