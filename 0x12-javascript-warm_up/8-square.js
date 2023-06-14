@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const process = require('process');
 let build = '';
-let failed = 'Missing size';
+const failed = 'Missing size';
 let num;
 let i;
 let j;
