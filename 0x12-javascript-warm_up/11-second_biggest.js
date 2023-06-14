@@ -1,9 +1,25 @@
 #!/usr/bin/node
-// searches the second biggest integer in the list of arguments.
+const process = require('process');
+let max;
+let secondMax;
 
-if (process.argv.length <= 3) {
+process.argv.forEach(function (value, index) {
+  value = parseInt(value);
+  if (index > 1) {
+    if (max === undefined) {
+      max = value;
+    } else if (secondMax === undefined && value <= max) {
+      secondMax = value;
+    } else if (value >= max) {
+      secondMax = max;
+      max = value;
+    } else if (value > secondMax && value < max){
+      secondMax = value;
+    }
+  }
+});
+if (secondMax === undefined) {
   console.log(0);
 } else {
-  const list = process.argv.sort();
-  console.log(list.reverse()[1]);
+  console.log(secondMax);
 }
