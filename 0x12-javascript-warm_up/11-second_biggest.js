@@ -13,7 +13,7 @@ process.argv.forEach(function (value, index) {
     } else if (value >= max) {
       secondMax = max;
       max = value;
-    } else if (value > secondMax && value < max){
+    } else if (value > secondMax && value < max) {
       secondMax = value;
     }
   }
